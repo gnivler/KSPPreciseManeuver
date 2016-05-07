@@ -147,21 +147,13 @@ internal class PreciseManeuverConfig {
     if (_increment < 2) {
       _increment += 1;
       notifyIncrementChanged ();
-	  return;
     }
-	if (_increment == 2) {
-      _increment = -2;
-	}
   }
   internal void setIncrementDown () {
     if (_increment > -2) {
       _increment -= 1;
       notifyIncrementChanged ();
-	  return;
     }
-	if (_increment == -2) {
-		_increment = 2;
-	}
   }
   private bool _x10UTincrement = false;
   internal bool x10UTincrement {
